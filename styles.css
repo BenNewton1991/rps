@@ -25,10 +25,10 @@ body {
 
 }
 
-.title, .subtitle, .title_emphasis {
+.title, .subtitle, .title_emphasis, .footer_text{
     color: #EEEEEE;
     margin: 0px;
-    padding: 0px;;
+    padding: 0px;
     }
 
 .subtitle {
@@ -121,4 +121,25 @@ body {
     width: 33%;
     height: 22vh;
     background-color: #EEEEEE;
+}
+
+
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #87A2FB;
+    width: 100%;
+    height: 5vh;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.footer_text {
+    font-size:24px;
+    font-weight: 200;
+   
 }
