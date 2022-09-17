@@ -23,7 +23,7 @@
     <div class="computer">
         <div class="container_1">
             <div class="container_computer_score">
-                <p class="score">Score: <span>0</span></p>
+                <p class="score">Score: <span id="cs">0</span></p>
 
 
             </div>
@@ -47,14 +47,14 @@
 
     <div class="content">
         <div class="computer_guess">
-            <p class="computer_text">The computer chose... : <span class="c_guess"> GUESS HERE</span></p>
+            <p class="computer_text">The computer chose... : <span id="cg"> GUESS HERE</span></p>
         </div>
         <div class="winner">
-            <p class="winner_text">You... : <span class="win">WIN</span></p>
+            <p class="winner_text">You... : <span class="win" id="wl">WIN</span></p>
 
         </div>
         <div class="player_guess">
-            <p class="player_text">You chose... : <span class="p_guess"> GUESS HERE</span></p>
+            <p class="player_text">You chose... : <span id="p_guess"> GUESS HERE</span></p>
 
         </div>
 
@@ -63,19 +63,19 @@
     <div class="player">
         <div class="p_container_1">
             <div id="rock" class="player_option">
-                <img id="rock" class="player_images" src="./images/rock.jpg" alt="rock" />
+                <img id="ir" class="player_images" src="./images/rock.jpg" alt="rock" onclick="rock()"/>
                                             
             </div>
         </div>
         <div class="p_container_1">
             <div id="paper" class="player_option">
-                <img class="player_images" src="images/paper.jpg" alt="paper" />
+                <img id="ip" class="player_images" src="images/paper.jpg" alt="paper" onclick="paper()"/>
                 
             </div>
         </div>
         <div class="p_container_2">
             <div id="scissors" class="player_option">
-                <img class="player_images" src="./images/scissors.jpg" alt="scissors" />
+                <img id="is" class="player_images" src="./images/scissors.jpg" alt="scissors" onclick="scissors()"/>
                 
             </div>
 
@@ -88,7 +88,7 @@
 
     <div class="player_score">
         <div class="player_score_container">
-            <p class="score">Score: <span>0</span></p>
+            <p class="score">Score: <span id="ps">0</span></p>
 
         </div>
     </div>
