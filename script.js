@@ -120,6 +120,8 @@ function win_or_lose(player_choice, computer_choice) {
             current_player_score = 0;
             current_computer_score = 0;
             player_score.textContent = current_computer_score;
+            computer_score.textContent = current_computer_score;
+
 
 
         }
