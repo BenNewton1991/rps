@@ -11,7 +11,7 @@ function computer_guess() {
         img.style.width = "100%";
         img.style.height = "100%";
         img.style.borderRadius = '25px';
-        document.getElementById("here").innerHTML='';
+        document.getElementById("here").textContent='';
         document.getElementById("here").append(img);
 
         let span = document.getElementById('cg')
@@ -24,7 +24,7 @@ function computer_guess() {
         img.style.width = "100%";
         img.style.height = "100%";
         img.style.borderRadius = '25px';
-        document.getElementById("here").innerHTML='';
+        document.getElementById("here").textContent='';
         document.getElementById("here").append(img);
 
         let span = document.getElementById('cg')
@@ -36,7 +36,7 @@ function computer_guess() {
         img.style.width = "100%";
         img.style.height = "100%";
         img.style.borderRadius = '25px';
-        document.getElementById("here").innerHTML='';
+        document.getElementById("here").textContent='';
         document.getElementById("here").append(img);
 
         let span = document.getElementById('cg')
@@ -72,7 +72,7 @@ function scissors () {
     let span = document.getElementById('p_guess')
     span.textContent = 'SCISSORS'
     let guess = computer_guess()
-    win_or_lose(2, guess)
+    win_or_lose(3, guess)
 
 
 }
@@ -95,6 +95,17 @@ function win_or_lose(player_choice, computer_choice) {
         span.textContent = 'WIN'
         current_player_score += 1;
         player_score.textContent = current_player_score;
+
+        if (current_player_score == 5) {
+            span.textContent = 'VICTORY, You win';
+            current_player_score = 0;
+            current_computer_score = 0;
+            computer_score.textContent = current_computer_score;
+            player_score.textContent = current_computer_score;
+
+
+
+        }
     }
 
     if ((player_choice == 1 && computer_choice == 2)
@@ -103,14 +114,20 @@ function win_or_lose(player_choice, computer_choice) {
         span.textContent = 'LOSE'
         current_computer_score += 1;
         computer_score.textContent = current_computer_score;
+
+        if (current_computer_score == 5) {
+            span.textContent = 'ARE DEFEATED, Computer wins';
+            current_player_score = 0;
+            current_computer_score = 0;
+            player_score.textContent = current_computer_score;
+
+
+        }
         
 
 
     }
 
-
-
-
-
-
 }
+
+
